@@ -2,6 +2,7 @@
 import React from 'react';
 import logo from '../assets/carrito.png';
 import './NavBar.css';
+import CartWidget from '../CartWidget';
 
 export default function NavBar() {
     return (
@@ -21,9 +22,8 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div className="navbar-nav ml-auto d-flex align-items-center"> 
-                    <span className="ml-2">0</span>
+                    <CartWidget /> {/* Agregando el componente CartWidget */}
                     <img src={logo} alt="Logo" className="navbar-logo" />
-                    
                 </div>
             </div>
         </nav>

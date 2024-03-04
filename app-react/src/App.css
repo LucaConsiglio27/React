@@ -16,12 +16,6 @@
 }
 
 
-.greeting {
-  text-align: center; 
-}
-
-
-
 .counter-container {
   display: flex;
   flex-direction: column;
