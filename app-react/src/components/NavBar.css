@@ -10,7 +10,9 @@
 
 /* Estilo para el fondo de la navbar */
 .custom-navbar-bg {
-    background-color: blueviolet !important;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 17%, rgba(252,70,248,1) 89%);
+    
 }
 
 /* Estilo para la marca del navbar */
@@ -21,10 +23,25 @@
 
 /* Estilo para los enlaces del navbar */
 .navbar-nav .nav-link {
-    color: #343a40; 
+    color: blueviolet; 
     font-weight: bold;
     margin-right: 20px; 
 }
+
+/* Estilos para "INICIO" */
+.navbar-brand.inicio {
+    /* Estilos específicos para "INICIO" */
+    color: blueviolet; /* Por ejemplo, cambiar el color del texto a rojo */
+    /* Agrega más estilos según sea necesario */
+}
+
+/* Estilos para "NOSOTROS" */
+.navbar-nav .nav-link.nosotros {
+    /* Estilos específicos para "NOSOTROS" */
+    color: blueviolet; /* Por ejemplo, cambiar el color del texto a azul */
+    /* Agrega más estilos según sea necesario */
+}
+
 
 /* Estilo para el botón del toggler */
 .navbar-toggler-icon {
