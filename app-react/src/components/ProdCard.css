@@ -1,0 +1,59 @@
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Cambia la sombra al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente la escala al pasar el cursor */
+}
+
+
+.product-card img {
+    max-width: 100%;
+    /* La imagen no se extenderá más allá del ancho de la tarjeta */
+    height: auto;
+    /* La altura de la imagen se ajustará automáticamente para mantener la proporción */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

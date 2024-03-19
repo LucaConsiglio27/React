@@ -16,38 +16,6 @@
 }
 
 
-.counter-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.counter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.counter p {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.counter button {
-  padding: 8px 16px;
-  font-size: 16px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-}
-
-.counter button:hover {
-  background-color: #0056b3;
-}
-
 
 .main-content {
   display: flex;
@@ -56,3 +24,16 @@
   flex-direction: column; /* Añadido para centrar verticalmente */
   height: 80vh; 
 } 
+
+
+.product-container-wrapper {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de ancho flexible */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin: 10px 10px 50px 10px; /* Margen en los lados izquierdo y derecho */
+}
