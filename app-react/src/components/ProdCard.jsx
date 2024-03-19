@@ -1,12 +1,15 @@
 // ProdCard.jsx
+
 import React, { useState } from 'react';
 import './ProdCard.css'; // Importar el archivo de estilos CSS
+import ItemCount from './ItemCount'; // Importa el componente ItemCount
 
-const ProductCard = ({ name, image, description }) => { // Acepta propiedades para el nombre y la imagen del producto
-    const [quantity, setQuantity] = useState(0);
+const ProductCard = ({ name, image, description, precio, stock }) => {
+    const [showDescription, setShowDescription] = useState(false); // Estado para controlar si se muestra la descripción o no
+    const [quantity, setQuantity] = useState(0); // Estado para la cantidad
 
     const handleIncrement = () => {
-        if (quantity < 15) {
+        if (quantity < stock) {
             setQuantity(prevQuantity => prevQuantity + 1);
         }
     };
@@ -17,16 +20,36 @@ const ProductCard = ({ name, image, description }) => { // Acepta propiedades pa
         }
     };
 
+    const handleAddToCart = () => {
+        // Aquí puedes agregar la lógica para agregar el producto al carrito
+        console.log(`Agregando ${name} al carrito con cantidad ${quantity}`);
+    };
+
     return (
         <div className="product-card">
-            <img src={image} alt={name} /> {/* Usa la imagen y el nombre del producto proporcionados */}
+            <img src={image} alt={name} />
             <h3>{name}</h3>
-            <p>{description}</p>
-            <p>Cantidad: {quantity}</p>
-            <div className="quantity-controls">
-                <button onClick={handleDecrement}>-</button>
-                <button onClick={handleIncrement}>+</button>
+            <p className="price">Precio: ${precio}</p>
+            <p className="stock">Stock: {stock}</p> {/* Muestra el stock */}
+            <div className="description-container">
+                {showDescription && (
+                    <div className="description">
+                        <p>{description}</p>
+                    </div>
+                )}
+                {!showDescription && (
+                    <div className="quantity-controls">
+                        <button className="quantity-button" onClick={handleDecrement}>-</button>
+                        <span className="quantity">{quantity}</span>
+                        <button className="quantity-button" onClick={handleIncrement}>+</button>
+                    </div>
+                )}
             </div>
+            {!showDescription && (
+                <button className="add-to-cart-button" onClick={handleAddToCart}>
+                    Agregar al Carrito
+                </button>
+            )}
         </div>
     );
 }

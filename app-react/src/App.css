@@ -35,5 +35,4 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
-  margin: 10px 10px 50px 10px; 
 }
