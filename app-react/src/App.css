@@ -21,19 +21,19 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  flex-direction: column; /* Añadido para centrar verticalmente */
+  flex-direction: column; 
   height: 80vh; 
 } 
 
 
 .product-container-wrapper {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: center;
 }
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de ancho flexible */
-  gap: 20px; /* Espacio entre las tarjetas */
-  margin: 10px 10px 50px 10px; /* Margen en los lados izquierdo y derecho */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  margin: 10px 10px 50px 10px; 
 }

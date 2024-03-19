@@ -4,11 +4,11 @@ import logo from '../assets/carrito.png';
 import './NavBar.css';
 import CartWidget from '../CartWidget';
 
-export default function NavBar() {
+const NavBar = ({ children }) => {
     return (
         <nav className="navbar navbar-expand-lg custom-navbar-bg d-flex justify-content-center align-items-center">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand inicio" href="#">
                     INICIO
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ export default function NavBar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+                        <a className="nav-link nosotros" aria-current="page" href="#">NOSOTROS</a>
                         <a className="nav-link" href="#">CONTACTO</a>
                         <a className="nav-link" href="#">PRODUCTOS</a>
                     </div>
@@ -26,6 +26,11 @@ export default function NavBar() {
                     <img src={logo} alt="Logo" className="navbar-logo" />
                 </div>
             </div>
+            {children}
         </nav>
     );
 }
+
+export default NavBar;
+
+
