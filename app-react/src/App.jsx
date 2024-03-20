@@ -39,7 +39,7 @@ function App() {
               image={product.image}
               description={product.description}
               precio={product.precio}
-              stock={product.stock} // Asegúrate de pasar el stock
+              stock={product.stock} 
             />
           ))}
         </div>

@@ -17,8 +17,8 @@ const NavBar = ({ children }) => {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-link nosotros" aria-current="page" href="#">NOSOTROS</a>
-                        <a className="nav-link" href="#">CONTACTO</a>
-                        <a className="nav-link" href="#">PRODUCTOS</a>
+                        <a className="nav-link" href="#">LACTEOS</a>
+                        <a className="nav-link" href="#">POSTRES</a>
                     </div>
                 </div>
                 <div className="navbar-nav ml-auto d-flex align-items-center"> 
