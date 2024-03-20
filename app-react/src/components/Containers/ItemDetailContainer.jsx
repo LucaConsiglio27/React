@@ -2,16 +2,16 @@ import '../css/ItemDetailContainer.css';
 import { useState, useEffect } from 'react';
 import { getProductById } from '../../asyncMock';
 import ItemDetail from '../ItemDetail';
-import { useParams } from 'react-router-dom'; // Importa useParams desde react-router-dom'
+import { useParams } from 'react-router-dom'; 
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
-    const { itemId } = useParams(); // Corrige la desestructuración de useParams
+    const { itemId } = useParams(); 
 
     useEffect(() => {
         const getProduct = async () => {
             try {
-                const response = await getProductById(itemId); // Corrige el uso de 'ItemId'
+                const response = await getProductById(itemId); 
                 setProduct(response);
             } catch (error) {
                 console.error(error);
@@ -19,11 +19,11 @@ const ItemDetailContainer = () => {
         };
 
         getProduct();
-    }, [itemId]); // Asegúrate de incluir itemId en la lista de dependencias
+    }, [itemId]); 
 
     return (
         <div className='ItemDetailContainer'>
-            {product && <ItemDetail {...product} />} {/* Asegúrate de que el producto exista antes de renderizar */}
+            {product && <ItemDetail {...product} />} 
         </div>
     );
 }

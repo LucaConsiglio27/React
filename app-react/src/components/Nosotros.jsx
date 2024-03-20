@@ -11,4 +11,4 @@ const Nosotros = () => {
     );
 }
 
-export default Nosotros; // Exporta el componente Nosotros como valor predeterminado
+export default Nosotros; 

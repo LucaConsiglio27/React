@@ -5,7 +5,7 @@ import Lacteos from '../src/components/Lacteos';
 import Postres from '../src/components/Postres';
 import Nosotros from '../src/components/Nosotros';
 import NavBar from '../src/components/NavBar';
-import ItemListContainer from '../src/components/Containers/ItemListContainer'; // Importa el componente ItemListContainer
+import ItemListContainer from '../src/components/Containers/ItemListContainer';
 import ItemDetailContainer from './components/Containers/ItemDetailContainer';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
             <div>
                 <NavBar />
                 <Routes>
-                    <Route path="/" element={<ItemListContainer />} /> {/* Define la página de inicio como ItemListContainer */}
+                    <Route path="/" element={<ItemListContainer />} /> 
                     <Route path="/nosotros" element={<Nosotros />} />
                     <Route path="/lacteos" element={<Lacteos />} />
                     <Route path="/postres" element={<Postres />} />

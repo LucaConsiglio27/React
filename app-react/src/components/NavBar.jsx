@@ -9,15 +9,14 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg custom-navbar-bg d-flex justify-content-center align-items-center">
             <div className="container-fluid">
-                <Link className="navbar-brand inicio" to="/"> {/* Utiliza Link para el logo */}
-                    INICIO
+                <Link className="navbar-brand inicio" to="/"> INICIO
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <Link className="nav-link nosotros" to="/nosotros">NOSOTROS</Link> {/* Utiliza Link para los enlaces */}
+                        <Link className="nav-link nosotros" to="/nosotros">NOSOTROS</Link> 
                         <Link className="nav-link" to="/lacteos">LACTEOS</Link>
                         <Link className="nav-link" to="/postres">POSTRES</Link>
                     </div>

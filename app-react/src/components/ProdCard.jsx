@@ -30,7 +30,7 @@ const ProductCard = ({ name, image, description, precio, stock }) => {
             <img src={image} alt={name} />
             <h3>{name}</h3>
             <p className="price">Precio: ${precio}</p>
-            <p className="stock">Stock: {stock}</p> {/* Muestra el stock */}
+            <p className="stock">Stock: {stock}</p> 
             <div className="description-container">
                 {showDescription && (
                     <div className="description">
