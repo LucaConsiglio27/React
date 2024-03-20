@@ -1,4 +1,3 @@
-// Lacteos.jsx
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../asyncMock';
 import Item from './Item';
