@@ -1,7 +1,7 @@
 // ProdCard.jsx
 
 import React, { useState } from 'react';
-import './ProdCard.css'; // Importar el archivo de estilos CSS
+import './css/ProdCard.css'; // Importar el archivo de estilos CSS
 import ItemCount from './ItemCount'; // Importa el componente ItemCount
 
 const ProductCard = ({ name, image, description, precio, stock }) => {

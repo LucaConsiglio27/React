@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/Containers/ItemListContainer';
 import NavBar from './components/NavBar'; 
 import ProductCard from './components/ProdCard';
 import { fetchProducts } from './asyncMock'; // Importar la función fetchProducts

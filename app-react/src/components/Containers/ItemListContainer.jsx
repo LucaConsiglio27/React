@@ -1,6 +1,6 @@
 // ItemListContainer.jsx
 import React from 'react';
-import './ItemListContainer.css';
+import '../css/ItemListContainer.css';
 
 export default function ItemListContainer({ greeting }) {
 

@@ -1,7 +1,7 @@
 // NavBar.jsx
 import React from 'react';
 import logo from '../assets/carrito.png';
-import './NavBar.css';
+import './css/NavBar.css';
 import CartWidget from './CartWidget';
 
 const NavBar = ({ children }) => {
