@@ -1,0 +1,55 @@
+/* En Postres.css */
+
+.postres-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.postres-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product { /* Define los estilos para la clase product */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product .info {
+    margin-top: 10px;
+}
+
+.product .info h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.product .info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.product .info .price {
+    font-weight: bold;
+    color: #333;
+}
+
+.product .info .stock {
+    color: #666;
+}

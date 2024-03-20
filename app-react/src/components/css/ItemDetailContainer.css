@@ -1,0 +1,36 @@
+/* En ItemDetailContainer.css */
+
+.ItemDetailContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ItemDetailContainer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ItemDetailContainer .loading {
+    font-style: italic;
+    color: #666;
+}
+
+.ItemDetailContainer .loading::after {
+    content: '...';
+    animation: loadingAnimation 0.5s infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        content: '.';
+    }
+
+    50% {
+        content: '..';
+    }
+
+    100% {
+        content: '...';
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../asyncMock';
 import Item from './Item';
+import '../components/css/ItemList.css';
 
 const ItemList = () => {
     const [products, setProducts] = useState([]);

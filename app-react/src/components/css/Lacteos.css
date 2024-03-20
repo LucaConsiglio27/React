@@ -1,0 +1,50 @@
+/* En Lacteos.css */
+
+.lacteos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lacteos-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.products-container .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.products-container .product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.products-container .product .info {
+    margin-top: 10px;
+}
+
+.products-container .product .info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.products-container .product .info p {
+    margin: 5px 0;
+}
+
+.products-container .product .info .price {
+    font-weight: bold;
+}
+
+.products-container .product .info .stock {
+    color: #666;
+}

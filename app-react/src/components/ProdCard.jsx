@@ -39,9 +39,11 @@ const ProductCard = ({ name, image, description, precio, stock }) => {
                 )}
                 {!showDescription && (
                     <div className="quantity-controls">
-                        <button className="quantity-button" onClick={handleDecrement}>-</button>
-                        <span className="quantity">{quantity}</span>
-                        <button className="quantity-button" onClick={handleIncrement}>+</button>
+                        <ItemCount // Aquí estás utilizando el componente ItemCount
+                            quantity={quantity}
+                            handleIncrement={handleIncrement}
+                            handleDecrement={handleDecrement}
+                        />
                     </div>
                 )}
             </div>

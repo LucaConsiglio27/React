@@ -1,0 +1,36 @@
+/* En ItemList.css */
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item-list p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.item-list .loading {
+    font-style: italic;
+    color: #666;
+}
+
+.item-list .loading::after {
+    content: '...';
+    animation: loadingAnimation 0.5s infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        content: '.';
+    }
+
+    50% {
+        content: '..';
+    }
+
+    100% {
+        content: '...';
+    }
+}

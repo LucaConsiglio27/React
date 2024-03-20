@@ -1,7 +1,12 @@
-/* ItemListContainer.css */
-.greeting {
-    color: blueviolet;
+/* En ItemListContainer.css */
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.main-content{
-    height: 200px;
+
+.section-container .greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
 }

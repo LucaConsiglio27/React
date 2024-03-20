@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='ItemDetailContainer'>
-            {product && <ItemDetail {...product} />} {/* Asegurándome de que product no sea null antes de renderizar */}
+            {product && <ItemDetail {...product} />} 
         </div>
     );
 };

@@ -1,31 +1,55 @@
 /* ItemCount.css */
 
-.Contador {
+.item-count {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
 
-.Controles {
+.counter {
     display: flex;
     align-items: center;
+    margin-bottom: 10px; /* Separación entre el contador y el botón */
 }
 
-.button {
+.decrement,
+.increment {
     width: 30px;
     height: 30px;
-    background-color: #ccc;
+    background-color: #f0f0f0;
     border: none;
     cursor: pointer;
     margin: 0 10px;
-}
-
-.button:hover {
-    background-color: #aaa;
-}
-
-.Numero {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
-    margin: 0 10px;
+    color: #333; /* Color de iconos */
+}
+
+.decrement:hover,
+.increment:hover {
+    background-color: #ccc; /* Cambio de color al pasar el mouse */
+}
+
+.count {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al cambiar el color */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
 }
