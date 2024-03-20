@@ -1,51 +1,25 @@
 // App.jsx
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Lacteos from '../src/components/Lacteos';
+import Postres from '../src/components/Postres';
+import Nosotros from '../src/components/Nosotros';
+import NavBar from '../src/components/NavBar';
 
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import ItemListContainer from './components/Containers/ItemListContainer';
-import NavBar from './components/NavBar'; 
-import ProductCard from './components/ProdCard';
-import { fetchProducts } from './asyncMock'; // Importar la función fetchProducts
-
-function App() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    // Ejecutar la función fetchProducts para obtener los datos de productos
-    fetchProducts().then((productsData) => {
-        setProducts(productsData);
-    });
-  }, []);
-
-  useEffect(() => {
-    // Esta función se ejecutará cada vez que los productos se actualicen
-    console.log("Productos actualizados:", products);
-  }, [products]);
-
-  return (
-    <>
-      <NavBar /> 
-      <h1 className='titulo'>Pistaccio Autoservicio</h1>
-      <div className="main-content">
-        <ItemListContainer className='greeting' greeting="¡Bienvenido a nuestra tienda en línea!" />
-      </div>
-      <div className="product-container-wrapper">
-        {/* Renderizando los productos después de que se resuelve la promesa */}
-        <div className="product-container">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              image={product.image}
-              description={product.description}
-              precio={product.precio}
-              stock={product.stock} 
-            />
-          ))}
-        </div>
-      </div>
-    </>
-  );
+const App = () => {
+    return (
+        <BrowserRouter>
+            <div>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<h1>Bienvenido a la página de inicio</h1>} />
+                    <Route path="/nosotros" element={<Nosotros />} />
+                    <Route path="/lacteos" element={<Lacteos />} />
+                    <Route path="/postres" element={<Postres />} />
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
